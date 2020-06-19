@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Stuart Grigg</title>
+    <style>
+        /* Use box sizing everywhere */
+        html {
+            box-sizing: border-box;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            background-color: #EEE5E9;
+            color: #000000;
+            font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+            margin: 0px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .horizontal-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .vertical-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .top {
+            background-color: #D64933;
+            color: #ffffff;
+            width: 100%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+        }
+
+        .contents {
+            max-width: 600px;
+            margin: 0px 20px;
+        }
+
+        .me-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 5px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        .top-text {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="horizontal-container">
+        <div class="vertical-container">
+            <div class="top vertical-container">
+                <div class="contents">
+                    <h1>Stuart Grigg</h1>
+                    <h2>Software Developer</h2>
+                </div>
+                <img class="me-img" src="me.jpg">
+
+
+            </div>
+            <div class="contents">
+                <p class="top-text">
+                    Hi, I&apos;m a Software Developer based in South West England.
+                </p>
+                <h3>Experience</h3>
+                <h3>Technologies</h3>
+                <h3>Recently Read</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
