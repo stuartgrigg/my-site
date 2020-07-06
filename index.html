@@ -59,7 +59,7 @@
         }
 
         .contents {
-            max-width: 600px;
+            max-width: 750px;
             margin: 0px 20px;
         }
 
@@ -83,6 +83,29 @@
 
         .top-text {
             margin-top: 50px;
+        }
+
+        .book-image {
+            width: 120px;
+            height: 160px;
+            display: none
+        }
+
+        @media only screen and (min-width: 600px) {
+            .book-image {
+                display: block;
+            }
+        }
+
+        .book-text {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+        }
+
+        .book-container {
+            margin-top: 16px;
+            margin-bottom: 16px;
         }
     </style>
 </head>
@@ -170,6 +193,25 @@
                     <li><a href="https://www.djangoproject.com/" target="_blank">Django</a> - TODO</li>
                 </ul>
                 <h3>Recently Read</h3>
+                These are some software focussed books that I have read and would recommend.
+                <div class="horizontal-container book-container">
+                    <img src="https://dataintensive.net/images/book-cover.png" class="book-image">
+                    <p class="book-text">
+                        <a href="https://dataintensive.net/" target="_blank">Designing Data-Intensive Applications</a> -
+                        Martin Kleppmann - A comprehensive guide to building modern data systems.
+                    </p>
+                </div>
+                <div class="horizontal-container book-container">
+                    <img src="https://www.informit.com/ShowCover.aspx?isbn=0321437381" class="book-image">
+                    <p class="book-text">
+                        <a href="https://www.informit.com/store/implementing-lean-software-development-from-concept-9780321437389"
+                            target="_blank">Implementing Lean Software Development</a> -
+                        Mary and Tom Poppendieck - This book contains a great number of practical tips for software
+                        development teams. My notes on the book can be found <a
+                            href="https://github.com/stuartgrigg/lean-notes" target="_blank">here</a>.
+                    </p>
+                </div>
+
             </div>
         </div>
     </div>
